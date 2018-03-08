@@ -11,5 +11,7 @@ public class HelloTest {
         System.out.println("hello " + new Date());
 
         System.out.println("test01");
+
+        System.out.println("test02");
     }
 }

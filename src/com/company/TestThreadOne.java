@@ -29,6 +29,7 @@ class ThreadDemoOne extends Thread {
         System.out.println("Creating " + threadName);
     }
 
+    @Override
     public void run() {
         System.out.println("Running " + threadName);
         try {
@@ -43,6 +44,7 @@ class ThreadDemoOne extends Thread {
         System.out.println("Thread: " + threadName + " exiting.");
     }
 
+    @Override
     public void start() {
         System.out.println("Starting " + threadName);
         if (t == null) {

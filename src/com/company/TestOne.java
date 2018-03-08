@@ -34,6 +34,7 @@ abstract class Animal {
 }
 
 class Cat extends Animal {
+    @Override
     public void eat() {
         System.out.println("吃鱼");
     }
@@ -44,6 +45,7 @@ class Cat extends Animal {
 }
 
 class DogOne extends Animal {
+    @Override
     public void eat() {
         System.out.println("吃骨头");
     }

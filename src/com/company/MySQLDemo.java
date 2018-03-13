@@ -46,12 +46,15 @@ public class MySQLDemo {
             e.printStackTrace();
         } finally {
             try {
-                if (stmt != null) stmt.close();
+                if (stmt != null) {
+                    stmt.close();
+                }
             } catch (SQLException se) {
-
             }
             try {
-                if (conn != null) conn.close();
+                if (conn != null) {
+                    conn.close();
+                }
             } catch (SQLException se) {
                 se.printStackTrace();
             }
